@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/fontawesome/webfonts/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/fontawesome/webfonts/Poppins-Regular.ttf') format('truetype');
+    font-style: 700;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/fontawesome/webfonts/Poppins-Black.ttf') format('truetype');
+    font-weight: bold;
+}
+
+
+:root {
+    --bs-cyan: #00AEF0;
+    --bs-gray-600 : #898989;
+}
+
+
+body{
+    font-family: 'Poppins' !important;
+    background: #fff;
+    background-image: url('../img/background.jpg');
+    background-size: 45rem;
+    background-position: center;
+    box-shadow: inset 0px 33px 25px 0 #fff, 
+            inset 0 150px 15px 0px  rgb(255, 255, 255,0.8),
+            inset 0 225px 5px 0px rgb(255, 255, 255,0.5);
+    
+}
+
+.fa-angle-double-right { color: var(--bs-cyan) }
+
+h1{
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+    color: var(--bs-gray-600) !important;
+
+    padding-right: 9rem;
+
+}
+
+h2{
+    color:var(--bs-cyan)  !important;
+    font-weight: bold !important;
+ 
+}
+h3{
+    font-style: 700 !important;
+}
+
+strong{
+    font-weight: bold !important;
+
+}
+
+.menu{
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 15rem;
+    margin: 0.5rem 0.5rem;
+}
+
+.container-fluid { 
+    height: 80vh; 
+} 
+
+.container-principal{
+
+    width: auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 400 !important;
+    text-align: right;
+
+
+}
+.container-principal--text{
+    
+    width:25rem;
+    padding-left: 2rem;
+
+}
+.beneficios{
+    font-size: 0.8rem;  
+    margin-top:1rem;
+    padding-right: 1rem;
+}
+.btn-primary{
+    background-color: var(--bs-cyan) !important;
+
+    margin:1rem 0 1rem 0;
+    border-color: var(--bs-cyan) !important;
+    border-radius: 1rem !important;
+    
+}
+.btn-secondary{
+    margin:1rem 0 1rem 0;
+    border-color: var(--bs-cyan) !important;
+    border-radius: 1rem !important;
+
+}
+
+.container-principal--img{
+    display:grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-secondary{
+    padding-left: 15px !important;
+}
+
+.whey-liquido{
+    width: 13rem;
+}
+.img-whey-protein{
+    -webkit-filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 90%)); 
+        filter: drop-shadow(10px 10px 20px rgba(0 0 0 / 70%));
+}
+
+
+
+
+@media (max-width: 1199px) {
+    .container-principal {
+        flex-direction: column-reverse;
+        padding-top: 20rem;
+        text-align: center;
+    }
+
+    .container-principal--text {
+        width: 20rem;
+        
+    }
+
+    .container-principal--img {
+        width: 15rem;
+    }
+    .col-1{
+        display:none;
+    }
+}
+
+@media (max-width: 767px) { /* Estilos para telas pequenas */
+    .container-principal{
+        padding-top: 20rem;
+        text-align: center;
+    }
+    
+    .beneficios {
+        flex-direction: column;
+    }
+
+    .beneficios i {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    h4{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .col-1{
+        display:none;
+    }
+}

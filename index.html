@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilos e fontes-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/fontawesome.css"></link>
+    <link rel="stylesheet" href="fonts/fontawesome/css/regular.css"></link>
+    <!-- Bibliotecas e Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+
+    <title>Massifik Nutrition - Whey Protein </title>
+    
+</head>
+<body>
+    <nav class="menu">
+        <img class="logo" src="./img/logo.png">
+    </nav>
+
+    <div class="container-fluid d-flex justify-content-center align-items-center"> <!-- pra ocupar a tela toda -->
+        <div class="row">
+            
+            <div class="col-auto"> 
+                <div class="container-principal">
+                <div class="container-principal--text">
+                    <h2>Melhore</h2>
+                    <h3>sua composição corporal e <strong>aumente sua massa muscular</strong> com <h2 class="enfase"9>Whey Protein</h2></h3>
+                    <div class="beneficios">
+                        <i class="fas fa-angle-double-right"></i> Fornece energia
+                        <i class="fas fa-angle-double-right"></i> Combate a Fadiga
+                        <i class="fas fa-angle-double-right"></i> Reduz a dor muscular
+                        <i class="fas fa-angle-double-right"></i> Auxilia o ganho de massa
+                        <i class="fas fa-angle-double-right"></i> Ganho acelerado de força
+                    </div>
+                    
+        
+                    <button class="btn btn-primary" onclick="newPopup()" data-target="#popup" data-toggle="modal">Compre Agora</button>
+                </div>
+                <div class="container-principal--img">
+                    <img class="img-whey-protein" src="./img/Img-wheyprotein.png" alt="Imagem da embalagem de Whey Protein Massivik Nutrition">
+                    <h1>Whey Protein 1kg</h1>
+                </div>
+            </div> 
+        </div>
+    </div>
+   </div> 
+        
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Compre Agora</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class='container'>
+                <form onsubmit='return validarFormulario();' target='_self'><div class='form-group'>
+                <label for='nome'>Nome:</label>
+                <input type='text' id='nome' name='nome' class='form-control' required><br>
+                <label for='telefone'>Telefone:</label>
+                <input type='tel' id='telefone' name='telefone' class='form-control phone'  required><br>
+                <label for='email'>Email:</label>
+                <input type='email' id='email' name='email' class='form-control' required><br>
+                <label for='cpf'>CPF:</label>
+                <input type='text' id='cpf' name='cpf' class='form-control' required>
+                <div class="d-flex justify-content-center">
+                  <button type="button" class="btn btn-secondary px-4 mx-4" data-dismiss="modal">Não, obrigado</button>
+                  <button type="submit" class="btn btn-primary px-4 mx-4">Quero Adquirir</button>
+                </div>
+                
+                </div>
+                </form></div>
+                </body></html>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    
+<!-- Folhas de Scripts -->
+<script src="fonts/fontawesome/js/fontawesome.js"></script>
+<script src="fonts/fontawesome/js/regular.js"></script>
+<script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+<script src="js/jquery.mask.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+<script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>    
+
+</body>
+
+
+</html>
